@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Hewan Ajaib</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kamu Hewan Apa?</h1>
+        <p>Jawab beberapa pertanyaan di bawah ini untuk tahu hewan ajaib apa yang cocok dengan kepribadianmu!</p>
+
+        <div class="soal">
+            <h3>1. Warna favoritmu?</h3>
+            <button onclick="jawab('kucing')">Hitam</button>
+            <button onclick="jawab('ular')">Hijau</button>
+            <button onclick="jawab('garuda')">Emas</button>
+        </div>
+
+        <div class="soal">
+            <h3>2. Aktivitas yang paling kamu suka?</h3>
+            <button onclick="jawab('kucing')">Tidur dan rebahan</button>
+            <button onclick="jawab('ular')">Bersembunyi</button>
+            <button onclick="jawab('garuda')">Bertualang</button>
+        </div>
+
+        <div class="soal">
+            <h3>3. Kamu lebih suka tempat yang...</h3>
+            <button onclick="jawab('kucing')">Hangat dan nyaman</button>
+            <button onclick="jawab('ular')">Tenang dan gelap</button>
+            <button onclick="jawab('garuda')">Di puncak tertinggi</button>
+        </div>
+
+        <div id="hasil" class="hasil" style="display: none;">
+            <h2>Hasilmu: Kamu adalah <span id="hewan">...</span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
